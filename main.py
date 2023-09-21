@@ -1,16 +1,17 @@
-# This is a sample Python script.
+# DANIEL EDUARDO BAUTISTA FUENTES
+# 2121323
+from compiler.analyzer import exec_compile
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+def main():
+    print("INICIO DE APLICACION, EMULANDO COMANDOS DE LINUX")
+    print("EJECUTA Man para ver los comandos")
+    while True:
+        str_input = input("~$ ")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+        print(exec_compile(str_input))
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
